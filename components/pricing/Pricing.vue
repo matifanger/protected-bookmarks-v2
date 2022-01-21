@@ -1,11 +1,6 @@
 <template>
-  <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
     <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-      <div>
-        <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-          Brand new
-        </p>
-      </div>
       <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
         <span class="relative inline-block">
           <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
@@ -20,9 +15,6 @@
         </span>
         pricing. Pay as you grow.
       </h2>
-      <p class="text-base text-gray-700 md:text-lg">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
-      </p>
     </div>
     <div class="grid max-w-md gap-10 row-gap-5 sm:row-gap-10 lg:max-w-screen-md lg:grid-cols-2 sm:mx-auto">
       <div class="flex flex-col justify-between p-5 bg-white border rounded shadow-sm">
@@ -51,7 +43,7 @@
                     <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
                   </svg>
                 </div>
-                <p class="font-medium text-gray-800">10 deploys per day</p>
+                <p class="font-medium text-gray-800">Unlimited bookmarks</p>
               </li>
               <li class="flex items-center">
                 <div class="mr-2">
@@ -69,7 +61,7 @@
                     <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
                   </svg>
                 </div>
-                <p class="font-medium text-gray-800">Unlimited domains</p>
+                <p class="font-medium text-gray-800">Unlimited devices</p>
               </li>
               <li class="flex items-center">
                 <div class="mr-2">
@@ -84,15 +76,12 @@
           </div>
         </div>
         <div>
-          <a
-            href="/"
+          <NuxtLink
+            to="/register"
             class="inline-flex items-center justify-center w-full h-12 px-6 mb-4 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
           >
             Start for free
-          </a>
-          <p class="text-sm text-gray-600">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          </p>
+          </NuxtLink>
         </div>
       </div>
       <div class="flex flex-col justify-between p-5 bg-white border rounded shadow-sm">
@@ -100,9 +89,9 @@
           <div class="flex items-center justify-between pb-6 mb-6 border-b">
             <div>
               <p class="text-sm font-bold tracking-wider uppercase">
-                For your team
+                Pro yearly
               </p>
-              <p class="text-5xl font-extrabold">$39</p>
+              <p class="text-5xl font-extrabold">$3.99</p>
             </div>
             <div class="flex items-center justify-center w-24 h-24 rounded-full bg-indigo-50">
               <svg class="w-10 h-10 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linecap="round" stroke-width="2">
@@ -125,7 +114,7 @@
                     <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
                   </svg>
                 </div>
-                <p class="font-medium text-gray-800">Unlimited deploys</p>
+                <p class="font-medium text-gray-800">Everything on the Free plan, plus</p>
               </li>
               <li class="flex items-center">
                 <div class="mr-2">
@@ -134,7 +123,7 @@
                     <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
                   </svg>
                 </div>
-                <p class="font-medium text-gray-800">Up to 10 Team Members</p>
+                <p class="font-medium text-gray-800">100 GB of storage</p>
               </li>
               <li class="flex items-center">
                 <div class="mr-2">
@@ -143,7 +132,7 @@
                     <circle cx="12" cy="12" fill="none" r="11" stroke="currentColor"></circle>
                   </svg>
                 </div>
-                <p class="font-medium text-gray-800">100 GB of starge</p>
+                <p class="font-medium text-gray-800">Cloud backup</p>
               </li>
               <li class="flex items-center">
                 <div class="mr-2">
@@ -167,15 +156,12 @@
           </div>
         </div>
         <div>
-          <a
-            href="/"
+          <NuxtLink
+            to="/register"
             class="inline-flex items-center justify-center w-full h-12 px-6 mb-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
           >
             Get started
-          </a>
-          <p class="text-sm text-gray-600">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          </p>
+          </NuxtLink>
         </div>
       </div>
     </div>

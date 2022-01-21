@@ -8,7 +8,7 @@
 
 <LandingCta />
 
-<LandingFaq />
+<!-- <LandingFaq /> -->
 
 <LandingTestimonials />
 

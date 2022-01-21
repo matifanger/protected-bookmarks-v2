@@ -2,7 +2,7 @@
 <div class="px-6 py-6 bg-purple-900 dark:bg-gray-800 md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
     <div class="xl:w-0 xl:flex-1">
         <h2 class="text-2xl leading-8 font-extrabold tracking-tight text-white sm:text-3xl sm:leading-9">
-            Receive alert about new commit or pull request on your github
+            Receive newsletter about incoming offers
         </h2>
         <p class="mt-3 max-w-3xl text-lg leading-6 text-indigo-100">
             No account or email required. We use push notifications. You can choose between several modes and define your own alert threshold.

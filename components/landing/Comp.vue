@@ -16,12 +16,12 @@
             </defs>
             <rect fill="url(#d9d7687a-355f-4502-8ec4-7945db034688)" width="52" height="24"></rect>
           </svg>
-          <span class="relative">The</span>
+          <span class="relative">Designed</span>
         </span>
-        quick, brown fox jumps over a lazy dog
+        by people, built for you
       </h2>
       <p class="text-base text-gray-700 md:text-lg">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
+        Protected Bookmarks is the best place to keep all your favorite books, songs, articles or whatever else you come across while browsing.
       </p>
     </div>
     <div class="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
@@ -31,9 +31,9 @@
             <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
           </svg>
         </div>
-        <h6 class="mb-2 font-semibold leading-5">The doctor said</h6>
+        <h6 class="mb-2 font-semibold leading-5">Safe & secure</h6>
         <p class="text-sm text-gray-900">
-          Baseball ipsum dolor sit amet cellar rubber win hack tossed. Slugging catcher slide bench league, left fielder nubber.
+          SSL everywhere, 100% cloud-based architecture secured behind a VPC.
         </p>
       </div>
       <div class="p-5  bg-white border rounded shadow-sm hover:-translate-y-2">
@@ -42,9 +42,9 @@
             <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
           </svg>
         </div>
-        <h6 class="mb-2 font-semibold leading-5">That is the true</h6>
+        <h6 class="mb-2 font-semibold leading-5">No limits. Starting from $0</h6>
         <p class="text-sm text-gray-900">
-          We meet at one of those defining moments - a moment when our nation is at war, our economy is in turmoil, and the American promise has been threatened once more.
+          Unlimited bookmarks, collections, and devices. Free to use indefinitely. Upgrade for premium features. 
         </p>
       </div>
       <div class="p-5 bg-white border rounded shadow-sm hover:-translate-y-2">
@@ -53,43 +53,9 @@
             <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
           </svg>
         </div>
-        <h6 class="mb-2 font-semibold leading-5">Those options</h6>
+        <h6 class="mb-2 font-semibold leading-5">Add to favorites.</h6>
         <p class="text-sm text-gray-900">
-          Strategic high-level 30,000 ft view. Drill down re-inventing the wheel at the end of the day but curate imagineer, or to be inspired is to become creative.
-        </p>
-      </div>
-      <div class="p-5 bg-white border rounded shadow-sm hover:-translate-y-2">
-        <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-          <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-          </svg>
-        </div>
-        <h6 class="mb-2 font-semibold leading-5">Swearem ipsum</h6>
-        <p class="text-sm text-gray-900">
-          Aliquam scelerisque accumsan nisl, a mattis eros vestibulum et. Vestibulum placerat purus ut nibh aliquam fringilla. Aenean et tortor diam, id tempor elit.
-        </p>
-      </div>
-      <div class="p-5 bg-white border rounded shadow-sm hover:-translate-y-2">
-        <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-          <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-          </svg>
-        </div>
-        <h6 class="mb-2 font-semibold leading-5">Webtwo ipsum</h6>
-        <p class="text-sm text-gray-900">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut perspiciatis unde omnis.
-        </p>
-      </div>
-      <div class="p-5 bg-white border rounded shadow-sm hover:-translate-y-2">
-        <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-          <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-          </svg>
-        </div>
-        <h6 class="mb-2 font-semibold leading-5">Lookout flogging</h6>
-        <p class="text-sm text-gray-900">
-          Flatland! Hypatia. Galaxies Orion's sword globular star cluster? Light years quasar as a patch of light gathered by gravity Vangelis radio telescope.
-        </p>
+          Look for your favorites bookmarks. </p>
       </div>
     </div>
     <div class="text-center">
