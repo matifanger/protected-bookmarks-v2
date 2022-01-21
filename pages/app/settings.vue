@@ -1,12 +1,16 @@
 <template>
     <div>
-        testing index
+
     </div>
 </template>
 
 <script>
     export default {
-        
+        layout: 'dashboardv2',
+        data() {
+            return {
+            }
+        },
     }
 </script>
 

@@ -51,7 +51,8 @@
           >PROTECTED BOOKMARKS</span
         >
       </NuxtLink>
-      <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
+
+      <ul v-if="!this.$fire.auth.currentUser" class="flex items-center hidden ml-auto space-x-8 lg:flex">
         <li>
           <NuxtLink
             to="/login"
@@ -72,6 +73,18 @@
           </NuxtLink>
         </li>
       </ul>
+      <ul v-else class="flex items-center hidden ml-auto space-x-8 lg:flex">
+        <li>
+          <NuxtLink
+            to="app"
+            aria-label="Join app"
+            title="Join app"
+            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+            >Open app</NuxtLink
+          >
+        </li>
+      </ul>
+
       <div class="ml-auto lg:hidden">
         <button
           aria-label="Open Menu"
@@ -162,12 +175,12 @@
                   >
                 </li>
                 <li>
-                  <NuxtLink
-                    to="/login"
+                  <a
+                    href="http://app.localhost:3000"
                     aria-label="Sign in"
                     title="Sign in"
                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    >Sign in</NuxtLink
+                    >Sign in</a
                   >
                 </li>
                 <li>

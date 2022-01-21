@@ -14,10 +14,13 @@
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.15.1",
     "firebase": "^9.5.0",
+    "k-domains": "^1.2.5",
     "nuxt": "^2.15.7",
+    "vue-clipboard2": "^0.3.3",
     "vue-sweetalert2": "^5.0.2"
   },
   "devDependencies": {
+    "@nuxtjs/router": "^1.6.1",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "postcss": "^8.3.5"
   }

@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'protectedbookmarks',
+    title: 'Protected Bookmarks',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -23,8 +23,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: ['@/plugins/vue-clipboard'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -33,6 +32,15 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+  //   [ "k-domains", {
+  //     subDomains: [ 'app' ], // List of directories to hold te pages for your subdomains
+  //     rootDomain: "main" //  directory to hold the pages for root domain  
+  // }
+  // ],
+  // ["@nuxtjs/router",{
+  //     keepDefaultRouter: true // this line is mandatory...
+  // }
+  // ]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -63,7 +71,17 @@ firebase: {
   },
   services: {
     firestore: true,
-    auth: true,
+    auth: {
+      persistence: 'local', // default
+      initialize: {
+        onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
+        onAuthStateChangedAction: 'onAuthStateChangedAction',
+        subscribeManually: false
+      },
+      ssr: false, // default
+      // emulatorPort: 9099,
+      // emulatorHost: 'http://localhost',
+    },
   }
 },
 
@@ -79,17 +97,7 @@ firestore: {
   }
 },
 
-auth: {
-  persistence: 'local', // default
-  initialize: {
-    onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
-    onAuthStateChangedAction: 'onAuthStateChangedAction',
-    subscribeManually: false
-  },
-  ssr: false, // default
-  emulatorPort: 9099,
-  emulatorHost: 'http://localhost',
-},
+
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {

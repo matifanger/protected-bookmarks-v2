@@ -34,10 +34,10 @@
 
 
 
-        <form class="mt-6">
+        <form class="mt-6" @submit.prevent>
             <div>
                 <label for="username" class="block text-sm text-gray-800 dark:text-gray-200">Email</label>
-                <input type="text"
+                <input type="text" v-model="userForm.email"
                     class="transform duration-100 block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
             </div>
 
@@ -47,12 +47,12 @@
                     <NuxtLink to="/recovery" title="Recovery" class="text-xs text-gray-600 dark:text-gray-400 hover:underline">Forget Password?</NuxtLink>
                 </div>
 
-                <input type="password"
+                <input type="password" v-model="userForm.password"
                     class="transform duration-100 block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
             </div>
 
             <div class="mt-6">
-                <button
+                <button v-on:click="loginUser( userForm )"
                     class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">
                     Login
                 </button>
@@ -85,3 +85,49 @@
             <NuxtLink to="/register" title="Register" class="font-medium text-gray-700 dark:text-gray-200 hover:underline">Create One</NuxtLink></p>
     </div>
 </template>
+
+<script>
+export default {
+
+  data() {
+    return {
+      loadingFormBtn: false,
+        reg: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
+        userForm: {  email: '', password: '' },
+        validForm: false,
+        // rules: {  
+        // email: [v => (this.reg.test(v)) || 'Your email must be valid.'],
+        // password: [v => (v.length >= 8) || 'Your password must have 8 caracters or more.'],
+        // passwordConfirm: [v => (v == this.userForm.password) || 'Your passwords not match.'],
+        // termOfUse: [v => (v == true) || ''],
+        // },
+    };
+  },
+    computed: {
+    deactivate() {
+      return this.reg.test(this.userForm.email) && 
+      this.userForm.password.length >= 6 &&
+       this.userForm.password == this.userForm.passwordConfirm
+    }
+    },
+  methods: { 
+    loginUser(payload) {
+      this.errors = {};
+      this.$store.dispatch('loginUser', payload).then(() => {
+        this.loadingFormBtn = true;
+      })
+      .catch((error) => {
+        this.loadingFormBtn = false;
+
+            this.$swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: error,
+          })
+
+      })
+    },
+
+  }
+};
+</script>

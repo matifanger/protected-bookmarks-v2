@@ -6,6 +6,11 @@ module.exports = {
         sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        theme: {
+          'navbar': '#11131B',
+          'page': '#242735',
+          'card': '#282B39',
+        },
         red: {
           '50': '#ffebee',
           '100': '#ffcdd2',
