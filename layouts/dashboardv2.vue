@@ -25,7 +25,7 @@
 
       <button v-if="dropdownIsOpen" @click="dropdownIsOpen = false" class="fixed top-0 right-0 bottom-0 left-0 h-full w-full bg-black opacity-50 z-50 cursor-default" />
 
-      <button @click="dropdownIsOpen = true" class="absolute right-0 transition ease-in duration-300 block mt-6 mr-5 p-2 text-white border border-transparent hover:border-white rounded-md dark:text-white focus:border-blue-500 focus:ring-opacity-40 dark:focus:ring-opacity-40 focus:ring-blue-300 dark:focus:ring-blue-400 focus:ring dark:bg-gray-800 focus:outline-none">
+      <button @click="dropdownIsOpen = true" class="lg:hidden absolute right-0 transition ease-in duration-300 block mt-6 mr-5 p-2 text-white border border-transparent hover:border-white rounded-md dark:text-white focus:border-blue-500 focus:ring-opacity-40 dark:focus:ring-opacity-40 focus:ring-blue-300 dark:focus:ring-blue-400 focus:ring dark:bg-gray-800 focus:outline-none">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
               <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
           </svg>
